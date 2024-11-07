@@ -24,15 +24,25 @@ body {
 body {
     display: flex;
     flex-direction: column;
+    background-color: #f4f4f4;
+    padding: 20px;
 }
 
 .main {
     flex: 1 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .header,
 .footer {
     flex: 0 0 auto;
+    padding: 10px 20px;
+    background: #005f73;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
 }
 
 /* Header */
@@ -168,4 +178,11 @@ blockquote {
 .logo img {
     width: 300px;
     height: auto;
+    border-radius: 50%;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
 }
