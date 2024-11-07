@@ -1,8 +1,8 @@
 ---
-Logo: image/leaf_256x256.png
-Tagline: My portfolio.
+Logo: image/bthlogo.png
+Tagline: Min portfolio.
 Social:
-    - title: Link till sidans github repo.
-      url: https://github.com/dbwebb-se/design-v3
+    - title: Länk till mitt github repository.
+      url: https://github.com/Zand9/design
       icon: github
 ---
