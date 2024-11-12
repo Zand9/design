@@ -2,6 +2,13 @@
 @import 'variables';
 @import 'blockquotes';
 @import 'code';
+@import 'typography';
+
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
 
 // Grundinställningar
 * {
@@ -83,15 +90,6 @@ body {
     }
 }
 
-.logo {
-    max-width: 30%;
-
-    img {
-        width: 300px;
-        height: auto;
-    }
-}
-
 .footer {
     display: flex;
     justify-content: space-between;
@@ -114,16 +112,6 @@ dd {
     text-align: justify;
     overflow-wrap: break-word;
     word-wrap: break-word;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-bottom: 0.6em;
-    font-weight: bold;
 }
 
 .logo img {
