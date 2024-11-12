@@ -1,0 +1,17 @@
+{
+  "name": "sass-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint \"**/*.scss\"",
+    "style": "sass macm16-theme/scss/style.scss macm16-theme/css/style.css --no-source-map",
+    "style-min": "sass macm16-theme/scss/style.scss macm16-theme/css/style.min.css --no-source-map --style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.27.1"
+  }
+}
