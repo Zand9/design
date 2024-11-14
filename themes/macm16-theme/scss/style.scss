@@ -1,3 +1,5 @@
+/* style.scss */
+
 @import '../../node_modules/normalize.css/normalize';
 @import 'variables';
 @import 'blockquotes';
@@ -125,4 +127,11 @@ dd {
     height: auto;
     border-radius: 50%;
     max-width: 100%;
+}
+
+.social a {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }

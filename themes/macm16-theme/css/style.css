@@ -1,3 +1,4 @@
+/* style.scss */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -309,6 +310,8 @@ template {
   display: none;
 }
 
+/* variables.scss */
+/* blockquotes.scss */
 blockquote {
   font-style: italic;
   margin-left: 1em;
@@ -316,6 +319,7 @@ blockquote {
   border-left: 0.5em solid #f5f5f5;
 }
 
+/* code.scss */
 code {
   margin: 0 0.1em;
   padding: 0.1em 0.2em;
@@ -333,7 +337,6 @@ pre {
   border-radius: 0.3em;
   background: #f5f5f5;
 }
-
 pre code {
   display: block;
   margin: 0;
@@ -344,6 +347,7 @@ pre code {
   line-height: 1.4;
 }
 
+/* typography.scss */
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -359,13 +363,24 @@ h6 {
   font-family: "Geist", sans-serif;
 }
 
-p {
+p,
+td,
+th,
+li,
+dd {
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
   font-size: 1.4em;
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
   margin-bottom: 1.96rem;
   color: #333;
   letter-spacing: 1px;
+}
+
+.title * {
+  color: #111;
 }
 
 /*!
@@ -6595,4 +6610,11 @@ dd {
   height: auto;
   border-radius: 50%;
   max-width: 100%;
+}
+
+.social a {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
