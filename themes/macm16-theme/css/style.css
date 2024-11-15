@@ -389,22 +389,35 @@ dd {
     padding: 10px;
     font-size: 90%;
   }
-  .header,
-  .footer {
+  .header {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 15px;
-    text-align: center;
   }
   .header .title,
-  .header .logo,
-  .footer .title,
-  .footer .logo {
+  .header .logo {
     padding: 1em 0;
     text-align: center;
-    min-width: 100%;
+    min-width: auto;
+  }
+  .header .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
   }
   .main {
     width: auto;
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 15px;
   }
   .footer .social {
@@ -425,6 +438,12 @@ dd {
   dd {
     font-size: 0.9em;
     padding: 0.5em 0;
+    word-wrap: break-word;
+    margin: 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
   }
   ol,
   ul {
