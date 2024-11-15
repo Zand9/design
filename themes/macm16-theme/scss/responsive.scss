@@ -1,0 +1,56 @@
+/* responsive.scss */
+
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+        font-size: 90%;
+    }
+
+    .header,
+    .footer {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+
+        .title,
+        .logo {
+            padding: 1em 0;
+            text-align: center;
+            min-width: 100%;
+        }
+    }
+
+    .main {
+        width: auto;
+        padding: 15px;
+    }
+
+    .footer {
+        .social {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+
+    .logo img {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    p,
+    td,
+    th,
+    li,
+    dd {
+        font-size: 0.9em;
+        padding: 0.5em 0;
+    }
+
+    ol,
+    ul {
+        padding-left: 1em;
+    }
+}
