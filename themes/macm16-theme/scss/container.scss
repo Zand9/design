@@ -1,0 +1,43 @@
+/* container.scss */
+
+body {
+    display: grid;
+    grid-template-columns: [first] 20% [second] auto [third] 20% [end];
+    grid-template-rows: [row1-start] 15% [row2-start] auto [row3-start] 15% [row-end];
+}
+
+.main {
+    grid-column: second / third;
+    grid-row: row2-start / row3-start;
+}
+
+.parent {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+
+    a {
+        color: #333;
+        font-size: 0.5em;
+    }
+}
+
+.css {}
+
+.html {}
+
+.php {}
+
+.python {}
+
+.git {}
+
+.sqlite {}

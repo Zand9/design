@@ -1,0 +1,23 @@
+/* footer.scss */
+
+.footer {
+    grid-column: first / end;
+    grid-row: row3-start / row-end;
+    display: grid;
+    grid-template-columns: [first] 20% [second] auto [third] 20% [end];
+    grid-template-rows: [row1-start] auto [row-end];
+    padding: 2rem;
+
+    .social {
+        a {
+            text-decoration: none;
+            font-size: 3rem;
+            color: white;
+        }
+    }
+}
+
+.footer-text {
+    grid-column: first / second;
+    grid-row: row1-start / row-end;
+}
