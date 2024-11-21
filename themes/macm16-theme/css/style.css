@@ -490,51 +490,58 @@ dd {
 /* container.scss */
 body {
   display: grid;
-  grid-template-columns: [first] 20% [second] auto [third] 20% [end];
-  grid-template-rows: [row1-start] 15% [row2-start] auto [row3-start] 15% [row-end];
+  grid-template-columns: [first] 1fr [second] 2fr [third] 1fr [end];
+  grid-template-rows: [row1-start] auto [row2-start] 1fr [row3-start] auto [row-end];
+  gap: 10px;
+  padding: 20px;
 }
-
-.main {
+body .header {
+  grid-column: first/end;
+  grid-row: row1-start/row2-start;
+  padding: 20px;
+  text-align: center;
+  background-color: #005f73;
+  color: white;
+}
+body .main {
   grid-column: second/third;
   grid-row: row2-start/row3-start;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
 }
-
-.parent {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.box {
-  width: 200px;
-  height: 100px;
-}
-.box a {
-  color: #333;
-  font-size: 0.5em;
+body .footer {
+  grid-column: first/end;
+  grid-row: row3-start/row-end;
+  padding: 20px;
+  text-align: center;
+  background-color: #005f73;
+  color: white;
 }
 
 /* footer.scss */
 .footer {
-  grid-column: first/end;
-  grid-row: row3-start/row-end;
   display: grid;
   grid-template-columns: [first] 20% [second] auto [third] 20% [end];
   grid-template-rows: [row1-start] auto [row-end];
+  color: white;
   padding: 2rem;
+}
+.footer .social {
+  grid-column: second/third;
+  text-align: center;
 }
 .footer .social a {
   text-decoration: none;
   font-size: 3rem;
   color: white;
 }
-
-.footer-text {
+.footer .footer-text {
   grid-column: first/second;
   grid-row: row1-start/row-end;
+  text-align: left;
+  font-size: 1rem;
+  color: white;
 }
 
 /*!
