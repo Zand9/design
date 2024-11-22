@@ -2,21 +2,10 @@
 
 .footer {
     display: grid;
-    grid-template-columns: [first] 20% [second] auto [third] 20% [end];
+    grid-template-columns: [first] 1fr [second] auto [third] auto [end];
     grid-template-rows: [row1-start] auto [row-end];
     color: white;
     padding: 2rem;
-
-    .social {
-        grid-column: second / third;
-        text-align: center;
-
-        a {
-            text-decoration: none;
-            font-size: 3rem;
-            color: white;
-        }
-    }
 
     .footer-text {
         grid-column: first / second;
@@ -24,5 +13,17 @@
         text-align: left;
         font-size: 1rem;
         color: white;
+    }
+
+    .social {
+        grid-column: third / end;
+        grid-row: row1-start / row-end;
+        text-align: right;
+
+        a {
+            text-decoration: none;
+            font-size: 3rem;
+            color: white;
+        }
     }
 }

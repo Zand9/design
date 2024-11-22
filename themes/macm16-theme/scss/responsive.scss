@@ -4,75 +4,63 @@
     body {
         padding: 10px;
         font-size: 90%;
+        overflow-x: hidden;
     }
 
     .header {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
         align-items: center;
+        gap: 10px;
         padding: 15px;
-
-        .title,
-        .logo {
-            padding: 1em 0;
-            text-align: center;
-            min-width: auto;
-        }
-
-        .menu {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            text-align: center;
-        }
     }
 
-    .main {
-        width: auto;
-        padding: 15px;
-        margin: 0 auto;
-        max-width: 100%;
-        word-wrap: break-word;
+    .logo {
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .title {
+        grid-row: 2;
+        justify-self: center;
+    }
+
+    .menu {
+        grid-row: 3;
+        justify-self: center;
+    }
+
+    .main.technology {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .menu {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
+    .article {
+        grid-column: 1 / -1;
+        grid-row: 2;
     }
 
     .footer {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
         justify-content: center;
         padding: 15px;
-
-        .social {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
     }
 
-    .logo img {
-        max-width: 80%;
-        height: auto;
-        margin: 0 auto;
+    .footer-text {
+        grid-row: 1;
+        justify-self: start;
     }
 
-    p,
-    td,
-    th,
-    li,
-    dd {
-        font-size: 0.9em;
-        padding: 0.5em 0;
-        word-wrap: break-word;
-        margin: 0;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    ol,
-    ul {
-        padding-left: 1em;
+    .social {
+        grid-row: 2;
+        justify-self: end;
     }
 }
