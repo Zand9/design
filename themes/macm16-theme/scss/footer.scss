@@ -1,29 +1,29 @@
 /* footer.scss */
 
 .footer {
-    display: grid;
-    grid-template-columns: [first] 1fr [second] auto [third] auto [end];
-    grid-template-rows: [row1-start] auto [row-end];
-    color: white;
-    padding: 2rem;
+  display: grid;
+  grid-template-columns: [first] 1fr [second] auto [third] auto [end];
+  grid-template-rows: [row1-start] auto [row-end];
+  color: #fff;
+  padding: 2rem;
 
-    .footer-text {
-        grid-column: first / second;
-        grid-row: row1-start / row-end;
-        text-align: left;
-        font-size: 1rem;
-        color: white;
-    }
+  .footer-text {
+    grid-column: first / second;
+    grid-row: row1-start / row-end;
+    text-align: left;
+    font-size: 1rem;
+    color: #fff;
+  }
+}
 
-    .social {
-        grid-column: third / end;
-        grid-row: row1-start / row-end;
-        text-align: right;
+.social {
+  grid-column: third / end;
+  grid-row: row1-start / row-end;
+  text-align: right;
 
-        a {
-            text-decoration: none;
-            font-size: 3rem;
-            color: white;
-        }
-    }
+  a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: #fff;
+  }
 }

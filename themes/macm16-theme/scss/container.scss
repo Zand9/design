@@ -1,56 +1,56 @@
 /* container.scss */
 
 body {
-    display: grid;
-    grid-template-columns: [first] 1fr [second] 2fr [third] 1fr [end];
-    grid-template-rows: [row1-start] auto [row2-start] 1fr [row3-start] auto [row-end];
-    gap: 10px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: [first] 1fr [second] 2fr [third] 1fr [end];
+  grid-template-rows: [row1-start] auto [row2-start] 1fr [row3-start] auto [row-end];
+  gap: 10px;
+  padding: 20px;
 }
 
 .header {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    background-color: #005f73;
-    color: white;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #005f73;
+  color: #fff;
 }
 
 .main {
-    grid-row: 2 / 3;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
+  grid-row: 2 / 3;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .main.technology {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto;
-    gap: 20px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 .menu {
-    grid-column: 1 / 2;
-    grid-row: 1;
-    align-self: start;
+  grid-column: 1 / 2;
+  grid-row: 1;
+  align-self: start;
 }
 
 .article {
-    grid-column: 2 / 3;
-    grid-row: 1;
-    align-self: start;
+  grid-column: 2 / 3;
+  grid-row: 1;
+  align-self: start;
 }
 
 .footer {
-    grid-row: 3 / 4;
-    text-align: center;
-    background-color: #005f73;
-    color: white;
-    padding: 20px;
+  grid-row: 3 / 4;
+  text-align: center;
+  background-color: #005f73;
+  color: #fff;
+  padding: 20px;
 }

@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -13,9 +13,9 @@ h3,
 h4,
 h5,
 h6 {
-    margin-bottom: 1.96em;
-    font-weight: bold;
-    font-family: "Geist", sans-serif;
+  margin-bottom: 1.96em;
+  font-weight: bold;
+  font-family: 'Geist', sans-serif;
 }
 
 p,
@@ -23,17 +23,17 @@ td,
 th,
 li,
 dd {
-    text-align: justify;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    font-size: 1.4em;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.4;
-    margin-bottom: 1.96rem;
-    color: #333;
-    letter-spacing: 1px;
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  font-size: 1.4em;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  margin-bottom: 1.96rem;
+  color: #333;
+  letter-spacing: 1px;
 }
 
 .title * {
-    color: $highlight-color;
+  color: $highlight-color;
 }

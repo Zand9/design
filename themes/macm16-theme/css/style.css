@@ -383,61 +383,6 @@ dd {
   color: #111;
 }
 
-/* responsive.scss */
-@media (max-width: 767px) {
-  body {
-    padding: 10px;
-    font-size: 90%;
-    overflow-x: hidden;
-  }
-  .header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    align-items: center;
-    gap: 10px;
-    padding: 15px;
-  }
-  .logo {
-    grid-row: 1;
-    justify-self: center;
-  }
-  .title {
-    grid-row: 2;
-    justify-self: center;
-  }
-  .menu {
-    grid-row: 3;
-    justify-self: center;
-  }
-  .main.technology {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-  }
-  .menu {
-    grid-column: 1/-1;
-    grid-row: 1;
-  }
-  .article {
-    grid-column: 1/-1;
-    grid-row: 2;
-  }
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    justify-content: center;
-    padding: 15px;
-  }
-  .footer-text {
-    grid-row: 1;
-    justify-self: start;
-  }
-  .social {
-    grid-row: 2;
-    justify-self: end;
-  }
-}
 /* technology.scss */
 .landingpage {
   display: grid;
@@ -6694,6 +6639,61 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+/* responsive.scss */
+@media (max-width: 767px) {
+  body {
+    padding: 10px;
+    font-size: 90%;
+    overflow-x: hidden;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+  }
+  .logo {
+    grid-row: 1;
+    justify-self: center;
+  }
+  .title {
+    grid-row: 2;
+    justify-self: center;
+  }
+  .menu {
+    grid-row: 3;
+    justify-self: center;
+  }
+  .main.technology {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .menu {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  .article {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    padding: 15px;
+  }
+  .footer-text {
+    grid-row: 1;
+    justify-self: start;
+  }
+  .social {
+    grid-row: 2;
+    justify-self: end;
+  }
+}
 * {
   box-sizing: border-box;
   border: 0 none;
