@@ -9,8 +9,12 @@
     "lint": "stylelint \"**/*.scss\"",
     "style": "sass macm16-theme/scss/style.scss macm16-theme/css/style.css --no-source-map",
     "style-min": "sass macm16-theme/scss/style.scss macm16-theme/css/style.min.css --no-source-map --style compressed",
-    "watch": "sass macm16-theme/scss/style.scss macm16-theme/css/style.css --no-source-map --watch",
-    "watch-min": "sass macm16-theme/scss/style.scss macm16-theme/css/style.min.css --no-source-map --style compressed --watch"
+    "watch": "sass macm16-theme/scss/style.scss:macm16-theme/css/style.css macm16-theme/scss/style-dark.scss:macm16-theme/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass macm16-theme/scss/style.scss:macm16-theme/css/style.min.css macm16-theme/scss/style-dark.scss:macm16-theme/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "style-dark": "sass macm16-theme/scss/style-dark.scss macm16-theme/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass macm16-theme/scss/style-dark.scss macm16-theme/css/style-dark.min.css --no-source-map --style compressed",
+    "style-light": "sass macm16-theme/scss/style.scss macm16-theme/css/style.css --no-source-map",
+    "style-light-min": "sass macm16-theme/scss/style.scss macm16-theme/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",
