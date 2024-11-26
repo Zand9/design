@@ -6662,6 +6662,11 @@ readers do not read off random characters that represent icons */
     font-size: 90%;
     overflow-x: hidden;
   }
+  .landingpage {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 1;
+  }
   .header {
     display: grid;
     max-width: 100vw;
@@ -6680,9 +6685,9 @@ readers do not read off random characters that represent icons */
     justify-self: center;
   }
   .main.technology {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1;
     grid-template-rows: auto auto;
-    max-width: 100vp;
+    max-width: 100vw;
   }
   .article {
     grid-column: 1/-1;
