@@ -1,15 +1,5 @@
 /* technology.scss */
 
-.landingpage {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 200px;
-  gap: 1.96rem;
-  margin-bottom: 1.96rem;
-  justify-content: center;
-  align-content: start;
-}
-
 .landingpage h1 {
   grid-column: span 3;
   justify-self: center;
@@ -25,37 +15,47 @@
   box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-.box.css {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
+.landingpage {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-auto-rows: 200px;
+  gap: 1.96rem;
+  margin-bottom: 1.96rem;
+  justify-content: center;
+  align-content: start;
 
-.box.html {
-  grid-column: 2 / 4;
-  grid-row: 1 / 2;
-}
+  .box.css {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 
-.box.javascript {
-  grid-column: 1 / 3;
-  grid-row: 2 / 3;
-}
+  .box.html {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
 
-.box.php {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-}
+  .box.javascript {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
 
-.box.python {
-  grid-column: 1 / 4;
-  grid-row: 3 / 4;
-}
+  .box.php {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
 
-.box.git {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
-}
+  .box.python {
+    grid-column: 1 / 4;
+    grid-row: 4 / 4;
+  }
 
-.box.sqlite {
-  grid-column: 2 / 4;
-  grid-row: 4 / 5;
+  .box.git {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+
+  .box.sqlite {
+    grid-column: 2 / 4;
+    grid-row: 5 / 6;
+  }
 }

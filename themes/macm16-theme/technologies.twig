@@ -8,10 +8,9 @@
             {{ content }}
 
             {% for tech in meta.techs %}
-                <a href="{{ base_url }}/technology/{{ tech.class }}">
-                    <div class="box {{ tech.class }}">
-                        <h2>{{ tech.name }}</h2>
-                    </div>
+                <div class="box {{ tech.class }}">
+                    <h2><a href="{{ base_url }}/technology/{{ tech.class }}">{{ tech.name }}</a></h2>
+                </div>
                 </a>
             {% endfor %}
         </div>
