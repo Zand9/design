@@ -1,9 +1,6 @@
 /* container.scss */
 
 body {
-  display: grid;
-  grid-template-columns: [first] 1fr [second] 2fr [third] 1fr [end];
-  grid-template-rows: [row1-start] auto [row2-start] 1fr [row3-start] auto [row-end];
   gap: 10px;
   padding: 20px;
   background-color: $background-color;

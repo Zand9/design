@@ -453,9 +453,6 @@ dd {
 
 /* container.scss */
 body {
-  display: grid;
-  grid-template-columns: [first] 1fr [second] 2fr [third] 1fr [end];
-  grid-template-rows: [row1-start] auto [row2-start] 1fr [row3-start] auto [row-end];
   gap: 10px;
   padding: 20px;
   background-color: #43b2c8;
@@ -6713,6 +6710,7 @@ body {
   padding: 20px;
   border-radius: 8px;
   width: 64em;
+  max-width: 100%;
   margin: 1.96rem auto;
 }
 
@@ -6806,21 +6804,63 @@ img {
     display: grid;
   }
   .landingpage {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
     grid-auto-rows: auto;
     gap: 1.96rem;
   }
-  .box {
+  .landingpage .box.css {
     grid-column: auto;
     grid-row: auto;
     width: 100%;
+    grid-row: 2/3;
+  }
+  .landingpage .box.html {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 2/3;
+  }
+  .landingpage .box.javascript {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 3/4;
+  }
+  .landingpage .box.php {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 3/4;
+  }
+  .landingpage .box.python {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 4/5;
+  }
+  .landingpage .box.git {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 4/5;
+  }
+  .landingpage .box.sqlite {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 5/6;
   }
   .landingpage .box {
     grid-column: auto;
     grid-row: auto;
+    width: 100%;
+  }
+  .landingpage .landingpage .box {
+    grid-column: auto;
+    grid-row: auto;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) and (max-width: 700px) {
   body {
     max-width: 100%;
     padding: 10px;
@@ -6832,8 +6872,50 @@ img {
     width: 100%;
   }
   .landingpage {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     grid-auto-rows: auto;
+  }
+  .landingpage .box.css {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 2/3;
+  }
+  .landingpage .box.html {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 3/4;
+  }
+  .landingpage .box.javascript {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 4/5;
+  }
+  .landingpage .box.php {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 5/6;
+  }
+  .landingpage .box.python {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 6/7;
+  }
+  .landingpage .box.git {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 7/8;
+  }
+  .landingpage .box.sqlite {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 8/9;
   }
   .landingpage .box {
     grid-template-columns: 1fr;
