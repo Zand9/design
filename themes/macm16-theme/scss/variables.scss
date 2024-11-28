@@ -1,9 +1,23 @@
 /* variables.scss */
 
-$font-color: #444;
+// Light Theme
+
+$font-color: #333;
 $font-alternative-color: #fff;
 $accent-color: #005f73;
 $background-color: #f4f4f4;
 $background-main-color: #fff;
 $highlight-color: #111;
 $border-radius: 8px;
+$border-color: #333;
+
+// Dark Theme
+
+$font-color-dark: #ffffffcb;
+$font-alternative-color-dark: #fff;
+$accent-color-dark: #3b3e3f;
+$background-color-dark: #3b3e3f;
+$background-main-color-dark: #333;
+$highlight-color-dark: #fff;
+$border-radius-dark: 8px;
+$border-color-dark: #cacaca;

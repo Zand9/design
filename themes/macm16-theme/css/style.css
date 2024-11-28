@@ -460,6 +460,7 @@ body {
   padding: 20px;
   background-color: #005f73;
   color: #fff;
+  max-width: 100;
 }
 
 .main {
@@ -467,6 +468,7 @@ body {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
+  max-width: 64em;
 }
 
 .main.technology {
@@ -477,6 +479,7 @@ body {
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
+  max-width: 64em;
 }
 
 .menu {
@@ -489,6 +492,7 @@ body {
   grid-column: 2/3;
   grid-row: 1;
   align-self: start;
+  max-width: 64em;
 }
 
 .footer {
@@ -506,20 +510,25 @@ body {
   max-width: 100vw;
 }
 
+.header {
+  grid-row: 1;
+}
+
 /* footer.scss */
 .footer {
   display: grid;
   grid-template-columns: [first] 1fr [second] auto [third] auto [end];
   grid-template-rows: [row1-start] auto [row-end];
-  color: #fff;
+  color: #333;
   padding: 2rem;
+  grid-row: 3;
 }
 .footer .footer-text {
   grid-column: first/second;
   grid-row: row1-start/row-end;
   text-align: left;
   font-size: 1rem;
-  color: #fff;
+  color: #333;
 }
 
 .social {
@@ -530,7 +539,7 @@ body {
 .social a {
   text-decoration: none;
   font-size: 3rem;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7960784314);
 }
 
 /*!
@@ -6678,7 +6687,6 @@ img {
   }
   .landingpage {
     max-width: 100vw;
-    display: grid;
     grid-template-columns: 3;
     overflow-x: hidden;
   }
@@ -6692,7 +6700,6 @@ img {
   }
   .landingpage {
     max-width: 100vw;
-    display: grid;
     grid-template-columns: 2;
     overflow-x: hidden;
   }
@@ -6724,12 +6731,12 @@ img {
     max-width: 100%;
   }
   .footer {
-    display: grid;
     max-width: 100vw;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     justify-content: center;
     padding: 15px;
+    box-sizing: border-box;
   }
   .footer-text {
     grid-row: 1;
@@ -6738,6 +6745,27 @@ img {
   .social {
     grid-row: 2;
     justify-self: end;
+  }
+  .box.css {
+    max-width: 100%;
+  }
+  .box.html {
+    max-width: 100%;
+  }
+  .box.javascript {
+    max-width: 100%;
+  }
+  .box.php {
+    max-width: 100%;
+  }
+  .box.python {
+    max-width: 100%;
+  }
+  .box.git {
+    max-width: 100%;
+  }
+  .box.sqlite {
+    max-width: 100%;
   }
 }
 * {
@@ -6769,7 +6797,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
-  color: #444;
+  color: #333;
   background-color: #f4f4f4;
   padding: 20px;
   font-family: sans-serif;
@@ -6794,14 +6822,6 @@ body {
   color: #fff;
   text-align: center;
   border-radius: 4px;
-}
-
-.header {
-  grid-row: 1;
-}
-
-.footer {
-  grid-row: 3;
 }
 
 p,
@@ -6837,6 +6857,7 @@ dd {
 .title {
   grid-column: 2/3;
   text-align: center;
+  color: #111;
 }
 .title h1 {
   margin: 0;

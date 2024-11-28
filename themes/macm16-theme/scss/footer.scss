@@ -4,15 +4,16 @@
   display: grid;
   grid-template-columns: [first] 1fr [second] auto [third] auto [end];
   grid-template-rows: [row1-start] auto [row-end];
-  color: #fff;
+  color: $font-color;
   padding: 2rem;
+  grid-row: 3;
 
   .footer-text {
     grid-column: first / second;
     grid-row: row1-start / row-end;
     text-align: left;
     font-size: 1rem;
-    color: #fff;
+    color: $font-color;
   }
 }
 
@@ -24,6 +25,6 @@
   a {
     text-decoration: none;
     font-size: 3rem;
-    color: #fff;
+    color: $font-color-dark;
   }
 }

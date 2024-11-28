@@ -19,67 +19,78 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'responsive';
 
 * {
-  box-sizing: border-box;
-  border: 0 none;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
 }
 
 html {
-  font-size: 100%;
+    font-size: 100%;
 }
 
 ol,
 ul {
-  padding-left: 1.5em;
+    padding-left: 1.5em;
 }
 
 .hidden {
-  display: none !important;
+    display: none !important;
 }
 
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr;
-  color: $font-color;
-  background-color: $background-color;
-  padding: 20px;
-  font-family: sans-serif;
-  line-height: 1.5rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    color: $font-color;
+    background-color: $background-color-dark;
+    padding: 20px;
+    font-family: sans-serif;
+    line-height: 1.5rem;
 }
 
 .main {
-  grid-row: 2;
-  grid-column: 1;
-  background: $background-main-color;
-  padding: 20px;
-  border-radius: $border-radius;
-  width: 64em;
-  margin: 1.96rem auto;
+    grid-row: 2;
+    grid-column: 1;
+    background: $background-main-color-dark;
+    padding: 20px;
+    border-radius: $border-radius-dark;
+    width: 64em;
+    margin: 1.96rem auto;
+}
+
+.main.technology {
+    background-color: $background-color-dark !important;
 }
 
 .header,
 .footer {
-  grid-column: 1;
-  padding: 10px 20px;
-  background: $accent-color;
-  color: $font-alternative-color;
-  text-align: center;
-  border-radius: 4px;
+    grid-column: 1;
+    padding: 10px 20px;
+    background: $background-main-color-dark !important;
+    color: $font-alternative-color-dark;
+    text-align: center;
+    border-radius: 4px;
 }
 
 .header {
-  grid-row: 1;
+    grid-row: 1;
+    color: $font-color-dark;
 }
 
 .footer {
-  grid-row: 3;
+    grid-row: 3;
+    color: $font-color-dark !important;
+
+    .footer-text {
+        color: $font-color-dark !important;
+    }
 }
 
 p,
@@ -87,51 +98,77 @@ td,
 th,
 li,
 dd {
-  text-align: justify;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+    color: $font-color-dark !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $font-color-dark !important;
+}
+
+a {
+    color: $font-color-dark !important;
 }
 
 .logo img {
-  width: 300px;
-  height: auto;
-  border-radius: 50%;
-  max-width: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    max-width: 100%;
 }
 
 .social a {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: $font-color-dark !important;
 }
 
 .logo {
-  grid-column: 1 / 2;
-  justify-self: start;
-  align-self: center;
+    grid-column: 1 / 2;
+    justify-self: start;
+    align-self: center;
 }
 
 .title {
-  grid-column: 2 / 3;
-  text-align: center;
+    grid-column: 2 / 3;
+    text-align: center;
+    color: $font-color-dark !important;
 
-  h1 {
-    margin: 0;
-    font-size: 1.8rem;
-  }
+    h1 {
+        margin: 0;
+        font-size: 1.8rem;
+    }
 
-  p {
-    margin: 0;
-    font-size: 1rem;
-  }
+    p {
+        margin: 0;
+        font-size: 1rem;
+    }
 }
 
 .site-header {
-  display: contents;
+    display: contents;
 }
 
-/* Längst ner i min style-dark.scss */
-.main {
-  background-color: #ff777f;
+blockquote {
+    border-left: 0.5em solid #333 !important;
 }
+
+code {
+    border: 1px solid $border-color-dark !important;
+    background: $border-color-dark !important;
+
+    pre {
+        border: 1px solid $border-color-dark !important;
+        background: $border-color-dark !important;
+    }
+}
+
+
+
+////////////////////////////////////////////////////
