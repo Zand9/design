@@ -16,8 +16,9 @@
 }
 
 .box {
-  border: 1px solid #ccc;
+  border: 1px solid $font-color;
   padding: 1.96rem;
+  color: $font-color;
 }
 
 .box:hover {

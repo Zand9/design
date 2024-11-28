@@ -2,6 +2,35 @@
 
 // Light Theme
 
+// Då min ursprungliga accentfärg var #005f73 så ville jag fortsätta använda den. Jag testade att lägga den i färgharmonin "Triad" och då fick jag fram dessa färger att använda till min färg:
+// #736800
+// #730030
+// #006073 (min färg)
+// #43B2C8
+// #C7BA44
+
+$font-color: #c7ba44;
+$font-alternative-color: #736800;
+$accent-color: #730030;
+$background-color: #43b2c8;
+$background-main-color: #005f73;
+$highlight-color: #c7ba44;
+$border-radius: 8px;
+$border-color: #c7ba44;
+
+// Dark Theme
+
+$font-color-dark: #fff;
+$font-alternative-color-dark: #ffffffcb;
+$accent-color-dark: #3b3e3f;
+$background-color-dark: #3b3e3f;
+$background-main-color-dark: #333;
+$highlight-color-dark: #fff;
+$border-radius-dark: 8px;
+$border-color-dark: #cacaca;
+
+/* Gammal inställning för Light-theme
+
 $font-color: #333;
 $font-alternative-color: #fff;
 $accent-color: #005f73;
@@ -11,13 +40,4 @@ $highlight-color: #111;
 $border-radius: 8px;
 $border-color: #333;
 
-// Dark Theme
-
-$font-color-dark: #ffffffcb;
-$font-alternative-color-dark: #fff;
-$accent-color-dark: #3b3e3f;
-$background-color-dark: #3b3e3f;
-$background-main-color-dark: #333;
-$highlight-color-dark: #fff;
-$border-radius-dark: 8px;
-$border-color-dark: #cacaca;
+*/

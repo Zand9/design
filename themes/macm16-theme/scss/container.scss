@@ -6,6 +6,7 @@ body {
   grid-template-rows: [row1-start] auto [row2-start] 1fr [row3-start] auto [row-end];
   gap: 10px;
   padding: 20px;
+  background-color: $background-color;
 }
 
 .header {
@@ -14,14 +15,14 @@ body {
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background-color: #005f73;
-  color: #fff;
-  max-width: 100;
+  background-color: $background-main-color;
+  color: $font-alternative-color;
+  max-width: 100%;
 }
 
 .main {
   grid-row: 2 / 3;
-  background-color: #fff;
+  background-color: $background-main-color;
   padding: 20px;
   border-radius: 8px;
   max-width: 64em;
@@ -33,7 +34,7 @@ body {
   grid-template-rows: auto;
   gap: 20px;
   padding: 20px;
-  background-color: #fff;
+  background-color: $background-main-color;
   border-radius: 8px;
   max-width: 64em;
 }
@@ -54,7 +55,7 @@ body {
 .footer {
   grid-row: 3 / 4;
   text-align: center;
-  background-color: #005f73;
-  color: #fff;
+  background-color: $background-main-color;
+  color: $font-alternative-color;
   padding: 20px;
 }
