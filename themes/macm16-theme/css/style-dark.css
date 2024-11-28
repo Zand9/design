@@ -329,7 +329,7 @@ blockquote {
   font-style: italic;
   margin-left: 1em;
   padding-left: 1em;
-  border-left: 0.5em solid #C7BA44;
+  border-left: 0.5em solid #c7ba44;
 }
 
 /* code.scss */
@@ -338,7 +338,7 @@ code {
   padding: 0.1em 0.2em;
   border: 1px solid #730030;
   border-radius: 0.3em;
-  background: #43B2C8;
+  background: #43b2c8;
   font-family: monospace;
   font-size: 0.85rem;
   line-height: 1.9824;
@@ -349,7 +349,7 @@ pre {
   padding: 0 1em;
   border: 1px solid #ccc;
   border-radius: 0.3em;
-  background: #43B2C8;
+  background: #43b2c8;
 }
 pre code {
   display: block;
@@ -389,12 +389,12 @@ dd {
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
   margin-bottom: 1.96rem;
-  color: #C7BA44;
+  color: #c7ba44;
   letter-spacing: 1px;
 }
 
 .title * {
-  color: #C7BA44;
+  color: #c7ba44;
 }
 
 /* technology.scss */
@@ -414,9 +414,9 @@ dd {
 }
 
 .box {
-  border: 1px solid #C7BA44;
+  border: 1px solid #c7ba44;
   padding: 1.96rem;
-  color: #C7BA44;
+  color: #c7ba44;
 }
 
 .box:hover {
@@ -465,7 +465,7 @@ body {
   grid-template-rows: [row1-start] auto [row2-start] 1fr [row3-start] auto [row-end];
   gap: 10px;
   padding: 20px;
-  background-color: #43B2C8;
+  background-color: #43b2c8;
 }
 
 .header {
@@ -531,7 +531,7 @@ body {
   background-color: #005f73;
 }
 .header a {
-  color: #C7BA44;
+  color: #c7ba44;
 }
 
 /* footer.scss */
@@ -539,7 +539,7 @@ body {
   display: grid;
   grid-template-columns: [first] 1fr [second] auto [third] auto [end];
   grid-template-rows: [row1-start] auto [row-end];
-  color: #C7BA44;
+  color: #c7ba44;
   padding: 2rem;
   grid-row: 3;
 }
@@ -548,7 +548,7 @@ body {
   grid-row: row1-start/row-end;
   text-align: left;
   font-size: 1rem;
-  color: #C7BA44;
+  color: #c7ba44;
 }
 
 .social {
@@ -559,7 +559,7 @@ body {
 .social a {
   text-decoration: none;
   font-size: 3rem;
-  color: #C7BA44;
+  color: #c7ba44;
 }
 
 /*!
@@ -6818,7 +6818,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
-  color: #C7BA44;
+  color: #c7ba44;
   background-color: #3b3e3f;
   padding: 20px;
   font-family: sans-serif;
