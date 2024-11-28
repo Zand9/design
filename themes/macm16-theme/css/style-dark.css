@@ -509,6 +509,10 @@ body {
   padding: 20px;
 }
 
+a p {
+  text-align: center;
+}
+
 /* header.scss */
 .site-header {
   display: grid;
@@ -6672,25 +6676,25 @@ img {
   display: block;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .site-header {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    max-width: 100vw;
+    max-width: calc(100vw - 16px);
     overflow-x: hidden;
   }
   header {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    max-width: 100vw;
+    max-width: calc(100vw - 16px);
   }
   body {
-    max-width: 100vw;
+    max-width: calc(100vw - 16px);
     padding: 10px;
     font-size: 90%;
   }
   .main {
-    max-width: 100vw;
+    max-width: calc(100vw - 16px);
     display: grid;
   }
   .landingpage {
@@ -6750,7 +6754,7 @@ img {
     grid-row: auto;
   }
 }
-@media (max-width: 1000px) and (max-width: 700px) {
+@media (max-width: 1200px) and (max-width: 767px) {
   body {
     max-width: 100%;
     padding: 10px;
@@ -6811,7 +6815,6 @@ img {
     grid-template-columns: 1fr;
   }
   .header {
-    display: grid;
     max-width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
@@ -6821,7 +6824,8 @@ img {
   }
   .logo {
     grid-row: 1;
-    justify-self: center;
+    justify-self: left;
+    max-width: 200px;
   }
   .title {
     grid-row: 2;
@@ -6840,7 +6844,7 @@ img {
   .footer {
     max-width: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: repeat(2, 1fr);
     justify-content: center;
     padding: 15px;
     box-sizing: border-box;
@@ -6860,6 +6864,7 @@ img {
   margin: 0;
   padding: 0;
   color: #fff;
+  box-sizing: border-box;
 }
 
 html {
@@ -6995,8 +7000,13 @@ blockquote {
 code {
   border: 1px solid #cacaca !important;
   background: #cacaca !important;
+  color: #3b3e3f !important;
 }
 code pre {
   border: 1px solid #cacaca !important;
   background: #cacaca !important;
+}
+
+.box {
+  border-color: #fff;
 }

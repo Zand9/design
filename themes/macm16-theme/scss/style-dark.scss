@@ -23,7 +23,8 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
   border: 0 none;
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: $font-color-dark;
+  box-sizing: border-box;
 }
 
 html {
@@ -162,6 +163,7 @@ blockquote {
 code {
   border: 1px solid $border-color-dark !important;
   background: $border-color-dark !important;
+  color: $background-color-dark !important;
 
   pre {
     border: 1px solid $border-color-dark !important;
@@ -169,6 +171,6 @@ code {
   }
 }
 
-
-
-////////////////////////////////////////////////////
+.box {
+  border-color: $font-color-dark;
+}
