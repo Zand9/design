@@ -375,6 +375,7 @@ h6 {
   margin-bottom: 1.96em;
   font-weight: bold;
   font-family: "Geist", sans-serif;
+  line-height: 1.3;
 }
 
 p,
@@ -395,6 +396,11 @@ dd {
 
 .title * {
   color: #c7ba44;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5rem;
 }
 
 /* technology.scss */
@@ -511,6 +517,21 @@ body {
 
 a p {
   text-align: center;
+}
+
+.box.kmom04 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.box.kmom05 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.box.kmom06 {
+  grid-column: 3/4;
+  grid-row: 2/3;
 }
 
 /* header.scss */
@@ -6695,7 +6716,6 @@ img {
   }
   .main {
     max-width: calc(100vw - 16px);
-    display: grid;
   }
   .landingpage {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -6749,9 +6769,23 @@ img {
     grid-row: auto;
     width: 100%;
   }
-  .landingpage .landingpage .box {
+  .landingpage .box.kmom04 {
     grid-column: auto;
     grid-row: auto;
+    width: 100%;
+    grid-row: 2/3;
+  }
+  .landingpage .box.kmom05 {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 2/3;
+  }
+  .landingpage .box.kmom06 {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 3/4;
   }
 }
 @media (max-width: 1200px) and (max-width: 767px) {
@@ -6764,6 +6798,9 @@ img {
     grid-column: auto;
     grid-row: auto;
     width: 100%;
+  }
+  .main {
+    max-width: 100vw;
   }
   .landingpage {
     grid-template-columns: 1fr !important;
@@ -6811,8 +6848,23 @@ img {
     width: 100%;
     grid-row: 8/9;
   }
-  .landingpage .box {
-    grid-template-columns: 1fr;
+  .landingpage .box.kmom04 {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 2/3;
+  }
+  .landingpage .box.kmom05 {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 3/4;
+  }
+  .landingpage .box.kmom06 {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    grid-row: 4/5;
   }
   .header {
     max-width: 100%;
@@ -6824,8 +6876,6 @@ img {
   }
   .logo {
     grid-row: 1;
-    justify-self: left;
-    max-width: 200px;
   }
   .title {
     grid-row: 2;
@@ -7009,4 +7059,11 @@ code pre {
 
 .box {
   border-color: #fff;
+}
+
+table {
+  border: 5px dotted rgba(255, 255, 255, 0.7960784314) !important;
+}
+table td {
+  border-top: 1px solid #fff !important;
 }

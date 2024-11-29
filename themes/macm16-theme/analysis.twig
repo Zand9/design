@@ -8,11 +8,9 @@
             {{ content }}
 
             {% for analysis in meta.analysis %}
-                <a href="{{ base_url }}/analysis/{{ analysis.class }}">
-                    <div class="box {{ analysis.class }}">
-                        <h2>{{ analysis.name }}</h2>
-                    </div>
-                </a>
+                <div class="box {{ analysis.class }}">
+                    <h2><a href="{{ base_url }}/analysis/{{ analysis.class }}">{{ analysis.name }}</a></h2>
+                </div>
             {% endfor %}
         </div>
     </div>

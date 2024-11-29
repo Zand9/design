@@ -1,0 +1,24 @@
+table {
+  font-size: 1.4em;
+  margin-bottom: 1.96rem;
+  border: 5px dotted $background-color;
+  border-collapse: collapse;
+  width: 100%;
+
+  //    tr:nth-child(2n + 1) {
+  //        background-color: $background-color;
+  //    }
+
+  td,
+  th {
+    padding: 4px 12px;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  td {
+    border-top: 1px solid $font-color;
+  }
+}

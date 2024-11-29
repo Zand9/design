@@ -1,5 +1,8 @@
 /* style-dark.scss */
 
+// Ja, denna fil är kaos. Jag gjorde såhär för att inte behöva oroa mig för sambandet mellan mina färger för variabler. Samt att jag gjorde uppgiften innan jag såg föreläsningen.
+// If it works, it works...
+
 @import '../../node_modules/normalize.css/normalize';
 @import 'variables';
 @import 'blockquotes';
@@ -173,4 +176,12 @@ code {
 
 .box {
   border-color: $font-color-dark;
+}
+
+table {
+  border: 5px dotted $font-alternative-color-dark !important;
+
+  td {
+    border-top: 1px solid $font-color-dark !important;
+  }
 }
