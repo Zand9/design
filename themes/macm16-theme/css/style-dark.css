@@ -6823,6 +6823,7 @@ img {
   .landingpage {
     grid-template-columns: 1fr !important;
     grid-auto-rows: auto;
+    max-width: 100%;
   }
   .landingpage .box.css {
     grid-column: auto;
