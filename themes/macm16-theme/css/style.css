@@ -427,6 +427,7 @@ body {
   margin-bottom: 1.96rem;
   justify-content: center;
   align-content: start;
+  max-width: 64em;
 }
 .landingpage .box.css {
   grid-column: 1/2;
@@ -6749,7 +6750,6 @@ ul {
 
 html,
 body {
-  height: 100%;
   overflow-x: hidden;
 }
 
