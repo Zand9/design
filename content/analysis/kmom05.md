@@ -23,40 +23,39 @@ Metod
 -----------------------
 
 Jag ska genom min webbläsare Google Chrome använda mig utav verktyget "Inspektera" för att jämföra vad för laddningstider som de olika hemsidorna har.
-Fliken "Network" är den som används då den visar all information jag behöver för den här undersökningen.
+Fliken "Network" är den som används då den innehåller mycket information jag behöver för den här undersökningen. Jag kommer även att använda "PageSpeed Insights" och resultaten av deras
+"Test av Core Web Vitals". 
 
 Resultat
 -----------------------
 
-Min undersökning visar följande resultat för varje individuellt företag:
+All rådata från min undersökning:
+
+<iframe class ="excel" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5RGIVJfzVBO6Hy4pEmiyAKO1OVr7RND4IBFYbXWObDzsebOOgpSDs_Kb5Y2MgV3D4_cMGJ51t9SjB/pubhtml?widget=true&amp;headers=false"></iframe>
+
+Länkar till alla testade sidor i undersökningen hittas i excelarket.
 
 [Blekinge Tekniska Högskola](https://bth.se/):
-
-
 
 ![Blekinge Tekniska Högskola](../assets/img/bth.jpg "Uppvisning av Blekinge Tekniska Högskola")
 
 [Linnéuniversitetet](https://www.lnu.se/):
 
-
-
 ![Linnéuniversitetet](../assets/img/lnu.jpg "Uppvisning av Linnéuniversitetet")
 
 [Högskolan Kristianstad](https://www.hkr.se/):
-
-
 
 ![Högskolan Kristianstad](../assets/img/hkr.jpg "Uppvisning av Högskolan Kristianstad")
 
 Analys
 -----------------------
 
-Diskutera och analysera de resultaten du fann.
+Resultatet visar att överlag är samtliga sidor både små i storlek och väldigt snabba. Det som skiljer sig är att testerna för "Mobil" visar generellt lite längre laddningstider men ingen större skillnad.
+Startsidorna och utbildningssidorna visade grönt i testerna på PageSpeed Insights medans skolornas bibliotekssidor visade lite rödare siffror. Det kan vara svårt att undvika då det är mycket information
+som ska visas där. Överlag så tycker jag att sidorna är väloptimerade och bra anpassade för både dator och mobil. 
 
-Referenser
------------------------
-
-Ange de eventuella referenser du använder dig av, om några.
+För att hitta en vinnare i det här testet så går vi vidare till verktyget "Inspect" och dess nätverksflik där vi hittar att sidorna på [Högskolan Kristianstad](https://www.hkr.se/) använde mindre datatrafik
+och laddades också därför in snabbare än övriga sidor. Hemsidan för [Högskolan Kristianstad](https://www.hkr.se/) blir därför vinnare. 
 
 Övrigt
 -----------------------
