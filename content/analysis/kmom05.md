@@ -57,6 +57,12 @@ som ska visas där. Överlag så tycker jag att sidorna är väloptimerade och b
 För att hitta en vinnare i det här testet så går vi vidare till verktyget "Inspect" och dess nätverksflik där vi hittar att sidorna på [Högskolan Kristianstad](https://www.hkr.se/) använde mindre datatrafik
 och laddades också därför in snabbare än övriga sidor. Hemsidan för [Högskolan Kristianstad](https://www.hkr.se/) blir därför vinnare. 
 
+På andra plats kommer [Linnéuniversitetet](https://www.lnu.se/) då de också visade ett bra resultat. På sista plats kommer [Blekinge Tekniska Högskola](https://bth.se/) då deras bibliotekssida visade rött i testerna på PageSpeed Insights.
+
+Laddningstiderna för samtliga sidor låg runt fem sekunder, med undantag för sidorna på [Högskolan Kristianstad](https://www.hkr.se/). Fem sekunder kan låta mycket men det är inte den tiden som användaren får vänta innan denna kan ta del av sidan.
+Laddningstiden blir därför inte något problem i detta test. 
+Förbättringsmöjligheter är att dra ned på antalet stora och krävande bilder. Dock är det något som kan behövas i just fliken för bibliotek. Jag tycker därför återigen att sidorna redan är väloptimerade.
+
 Övrigt
 -----------------------
 
