@@ -3,25 +3,50 @@ Title: Kmom05
 Description: Analysis in Kmom05
 ---
 
-Titel på rapporten
+Jämförelse och analysering av olika sidors laddningstider
 =======================
 
-Skriv en eller två rader om vad uppgiften handlar om.
+Jag ska analysera tre stycken hemsidor för att jämföra deras laddningstider. Skiljer det sig? Vad är det som skiljer hemsidorna åt?
 
 Urval
 -----------------------
 
-Berätta vilka webbplatser du valt att undersöka och varför eller hur du gick tillväga när du gjorde ditt urval.
+Jag har valt att jämföra tre stycken hemsidor för skolor. Jag har studerat kurser på alla tre skolor så det blir intressant på ett personligt plan att jämföra dessa.
+
+Mina val föll därför på följande hemsidor:
+
+[Blekinge Tekniska Högskola](https://bth.se/),
+[Linnéuniversitetet](https://www.lnu.se/) och
+[Högskolan Kristianstad](https://www.hkr.se/).
 
 Metod
 -----------------------
 
-Berätta kort om din "metod", hur du gör för att utföra undersökningen. Berätta om du använder något speciellt verktyg.
+Jag ska genom min webbläsare Google Chrome använda mig utav verktyget "Inspektera" för att jämföra vad för laddningstider som de olika hemsidorna har.
+Fliken "Network" är den som används då den visar all information jag behöver för den här undersökningen.
 
 Resultat
 -----------------------
 
-Dokumentera dina resultat från din studie. Berätta vad du kom fram till, vilka resultat du hittade och observerade.
+Min undersökning visar följande resultat för varje individuellt företag:
+
+[Blekinge Tekniska Högskola](https://bth.se/):
+
+
+
+![Blekinge Tekniska Högskola](../assets/img/bth.jpg "Uppvisning av Blekinge Tekniska Högskola")
+
+[Linnéuniversitetet](https://www.lnu.se/):
+
+
+
+![Linnéuniversitetet](../assets/img/lnu.jpg "Uppvisning av Linnéuniversitetet")
+
+[Högskolan Kristianstad](https://www.hkr.se/):
+
+
+
+![Högskolan Kristianstad](../assets/img/hkr.jpg "Uppvisning av Högskolan Kristianstad")
 
 Analys
 -----------------------
@@ -36,4 +61,5 @@ Ange de eventuella referenser du använder dig av, om några.
 Övrigt
 -----------------------
 
-Skriv ditt eget namn samt vilka gruppmedlemmar som deltog i att författa rapporten.
+Den här rapporten är skriven av mig och endast mig, Max "macm16" Sandgren.
+Distanselev på kurspaketet "Webbprogrammering och Databaser".
