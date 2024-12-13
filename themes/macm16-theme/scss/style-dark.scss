@@ -165,13 +165,15 @@ blockquote {
 }
 
 code {
-  border: 1px solid $border-color-dark !important;
+  border: 2px solid $border-color-dark !important;
   background: $border-color-dark !important;
-  color: $background-color-dark !important;
+  color: $black !important;
+  border: 1px solid $black !important;
 
   pre {
-    border: 1px solid $border-color-dark !important;
+    border: 2px solid $border-color-dark !important;
     background: $border-color-dark !important;
+    border: 1px solid $black !important;
   }
 }
 
