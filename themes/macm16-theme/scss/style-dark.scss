@@ -186,3 +186,10 @@ table {
     border-top: 1px solid $font-color-dark !important;
   }
 }
+
+.header,
+.main,
+.footer {
+  border: 10px solid $border-color-dark !important;
+  border-style: outset;
+}

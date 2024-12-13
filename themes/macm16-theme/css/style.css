@@ -9,6 +9,7 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barrio&family=Geist:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -336,20 +337,20 @@ blockquote {
 code {
   margin: 0 0.1em;
   padding: 0.1em 0.2em;
-  border: 1px solid #730030;
+  border: 1px solid #c7ba44;
   border-radius: 0.3em;
-  background: #43b2c8;
+  background: #c7ba44;
   font-family: monospace;
   font-size: 0.85rem;
   line-height: 1.9824;
-  color: #736800;
+  color: #004350;
 }
 
 pre {
   padding: 0 1em;
   border: 1px solid #ccc;
   border-radius: 0.3em;
-  background: #43b2c8;
+  background: #c7ba44;
 }
 pre code {
   display: block;
@@ -374,7 +375,7 @@ h5,
 h6 {
   margin-bottom: 1.96em;
   font-weight: bold;
-  font-family: "Geist", sans-serif;
+  font-family: "Barrio", sans-serif;
   line-height: 1.3;
 }
 
@@ -387,7 +388,7 @@ dd {
   overflow-wrap: break-word;
   word-wrap: break-word;
   font-size: 1.4em;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   line-height: 1.4;
   margin-bottom: 1.96rem;
   color: #c7ba44;
@@ -398,9 +399,33 @@ dd {
   color: #c7ba44;
 }
 
+.title a {
+  font-family: "Barrio", sans-serif;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.main h1 {
+  border-bottom: 7px dotted;
+}
+.main h2 {
+  border-bottom: 7px dotted;
+}
+.main h3 {
+  border-bottom: 7px dotted;
+}
+
+li a,
+h2 a {
+  font-family: "Barrio", sans-serif;
+  font-size: 1.4em;
 }
 
 /* technology.scss */
@@ -458,6 +483,11 @@ body {
   grid-row: 5/6;
 }
 
+.box {
+  border: 10px solid #c7ba44;
+  border-style: outset;
+}
+
 /* container.scss */
 body {
   gap: 10px;
@@ -471,14 +501,14 @@ body {
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background-color: #005f73;
+  background-color: #004350;
   color: #736800;
   max-width: 100%;
 }
 
 .main {
   grid-row: 2/3;
-  background-color: #005f73;
+  background-color: #004350;
   padding: 20px;
   border-radius: 8px;
   max-width: 64em;
@@ -490,7 +520,7 @@ body {
   grid-template-rows: auto;
   gap: 20px;
   padding: 20px;
-  background-color: #005f73;
+  background-color: #004350;
   border-radius: 8px;
   max-width: 64em;
 }
@@ -511,7 +541,7 @@ body {
 .footer {
   grid-row: 3/4;
   text-align: center;
-  background-color: #005f73;
+  background-color: #004350;
   color: #736800;
   padding: 20px;
 }
@@ -535,6 +565,13 @@ a p {
   grid-row: 2/3;
 }
 
+.header,
+.main,
+.footer {
+  border: 10px solid #c7ba44;
+  border-style: outset;
+}
+
 /* header.scss */
 .site-header {
   display: grid;
@@ -544,7 +581,7 @@ a p {
 
 .header {
   grid-row: 1;
-  background-color: #005f73;
+  background-color: #004350;
 }
 .header a {
   color: #c7ba44;
@@ -608,6 +645,8 @@ table td {
   height: 0;
   overflow: hidden;
   max-width: 100%;
+  border: 10px solid #c7ba44;
+  border-style: outset;
 }
 
 .embed-container iframe,
@@ -629,6 +668,10 @@ table td {
   margin-bottom: 1.96rem;
   justify-content: center;
   align-content: start;
+}
+.gallery .img {
+  border: 10px solid #c7ba44;
+  border-style: outset;
 }
 .gallery .gallery-item1 {
   grid-column: 1/2;
@@ -6875,14 +6918,17 @@ body {
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   color: #c7ba44;
-  background-color: #43b2c8;
   padding: 20px;
+  background-image: url("../../../assets/img/backgroundblue2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 .main {
   grid-row: repeat(2, 1fr);
   grid-column: 1fr;
-  background: #005f73;
+  background-color: #004350;
   padding: 20px;
   border-radius: 8px;
   width: 64em;
@@ -6894,7 +6940,7 @@ body {
 .footer {
   grid-column: 1fr;
   padding: 10px 20px;
-  background-color: #005f73;
+  background-color: #004350;
   color: #c7ba44;
   text-align: center;
   border-radius: 4px;
@@ -6937,7 +6983,7 @@ dd {
 }
 .title h1 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 5rem;
 }
 .title p {
   margin: 0;

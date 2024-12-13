@@ -6,6 +6,8 @@
   height: 0;
   overflow: hidden;
   max-width: 100%;
+  border: 10px solid $border-color;
+  border-style: outset;
 }
 
 .embed-container iframe,
@@ -18,6 +20,7 @@
   height: 100%;
 }
 
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 300px);
@@ -27,6 +30,11 @@
   margin-bottom: 1.96rem;
   justify-content: center;
   align-content: start;
+
+  .img {
+    border: 10px solid $border-color;
+    border-style: outset;
+  }
 
   .gallery-item1 {
     grid-column: 1 / 2;
