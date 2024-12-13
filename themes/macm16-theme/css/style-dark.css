@@ -7249,3 +7249,12 @@ table td {
   border: 10px solid #cacaca !important;
   border-style: outset;
 }
+
+.img {
+  border: 10px solid #cacaca !important;
+  border-style: outset;
+}
+
+.embed-container {
+  border: 10px solid #cacaca;
+}
