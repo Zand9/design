@@ -229,11 +229,11 @@ to your `index.twig`. This works for arbitrary files in your theme's folder,
 including images and JavaScript files.
 
 Please note that Twig escapes HTML in all strings before outputting them. So
-for example, if you add `headline: My <strong>favorite</strong> color` to the
+for example, if you add `headline: My favorite color` to the
 YAML header of a page and output it using `{{ meta.headline }}`, you'll end up
-seeing `My <strong>favorite</strong> color` - yes, including the markup! To
+seeing `My favorite color` - yes, including the markup! To
 actually get it parsed, you must use `{{ meta.headline|raw }}` (resulting in
-the expected <code>My **favorite** color</code>). Notable exceptions to this
+the expected <code>My favorite color</code>). Notable exceptions to this
 are Pico's `content` variable (e.g. `{{ content }}`), Pico's `content` filter
 (e.g. `{{ "sub/page"|content }}`), and Pico's `markdown` filter, they all are
 marked as HTML safe.
